@@ -1,6 +1,6 @@
 # **Optimized Telegram Deleted Message Scraper**
 
-This is an advanced Python script that scans a Telegram channel's admin log to find out which messages were deleted, who sent them, and which admin deleted them.
+This is an advanced Python script that scans a Telegram group/channel's admin log to find out which messages were deleted, who sent them, and which admin deleted them.
 
 It is heavily optimized to run quickly and avoid Telegram's rate limits by using batch processing for users, caching user data, and implementing an adaptive rate limiter. So you can have your deleted telegram messages in your storage!
 
@@ -36,7 +36,7 @@ This script is fully interactive and will prompt you for all needed information.
 
 4. The script will immediately ask for your api\_id and api\_hash.  
 5. If it's your first time running it, it will ask for your **phone number**, then the **login code** Telegram sends you, and finally your **2FA password** if you have one.  
-6. After logging in, it will ask for the **target channel ID or username** (e.g., @mychannel or \-100123456789).  
+6. After logging in, it will ask for the **target channel/group ID or username** (e.g., @mychannel or \-100123456789).  
    * **Note:** To get deleted messages, you **must** be an admin in that channel with the right to view the admin log.  
 7. The script will start processing and will print its progress.  
 8. When finished, it will save a JSON report file (e.g., deleted\_messages\_optimized\_-100123...json) in the same directory.
